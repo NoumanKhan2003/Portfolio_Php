@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+  }
+  body{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  main{
+      margin-top: 1rem;
+    }
+    #nav {
+      background-color: antiquewhite;
+      border-color: black;
+      border-width: 5px;
+      border-style: double;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.9rem;
+      position: relative;
+      transition: transform 0.5;
+    }
+    #nav:hover{
+    box-shadow: 2px 3px 10px rgb(18, 30, 37);
+    }
+    #nav a {
+      padding: 5px;
+    }
+    #nav a:hover {
+      background-color: rgb(12, 54, 4);
+      color: white;
+      border-radius: 20px;
+      transform: scale(1.1);
+    }
+    #logo{
+      height: 2rem;
+      border-radius: 50%;
+    } 
+    h1{
+        margin-top:auto ;
+        display: flex;
+        justify-content: center;
+      }
+      h3{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+.container{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    font-size:1.3rem;
+    padding-bottom: 0px;
+}
+label{ 
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+#message{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+#verify{
+    background-color: rgb(114, 255, 114);
+    color: black;
+    font-weight: bold;
+}
+#send{
+    background-color: rgb(255, 143, 143);
+    font-weight: bold;
+}
+footer{
+    font-size: 1rem;
+    background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  } 
+  @media only screen and (max-width:600px){
+    .container{
+        font-size: 7vw;
+        padding: 2vw;
+        height: fit-content;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    #message{
+        font-size:8vw ;
+        margin-top: 6vw ;
+    }
+    input{
+        margin-bottom:2vw;
+    }
+    h3{
+        padding-left: 2vw;
+    }
+    label{
+        font-size: 10vw;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+  }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12th Marksheet</title>
+</head>
+<link rel="stylesheet" href="styleEducation.css">
+<body>
+<div class="container">
+<img src="Nouman 12th.jpg" alt="12th Marksheet">
+</div>
+<div class="buttons">
+    <button type="button" id="print">Print</button>
+    <button type="button" id="back">Back</button>
+    </div>
+    <script>
+        printbtn = document.getElementById('print')
+        printbtn.addEventListener('click', function () {
+            print();
+        })
+        const backbtn = document.getElementById('back');
+        backbtn.addEventListener('click', function () {
+            window.history.back();
+        })
+    </script>
+</body>
+</html>
