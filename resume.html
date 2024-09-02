@@ -157,6 +157,7 @@
     </div>
     <div class="button">
     <button type="button" name="print" id="print">Print</button>
+    <button type="button" name="home" id="home">Home</button>
   </div>
   </main> 
   <footer>
@@ -166,7 +167,14 @@
     const printbtn = document.getElementById('print')
 printbtn.addEventListener("click", function(){
 print();
-})
+});
+
+
+    const homebtn = document.getElementById('home');
+   homebtn.addEventListener("click", function(){
+   window.history.back();
+  });
+
   </script>
 </body>
 </html>

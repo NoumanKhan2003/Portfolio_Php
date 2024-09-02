@@ -1,5 +1,5 @@
 body {
-  background-image: url("bg3.jpg");
+  background-image: url("pics/bg3.jpg");
   background-repeat: no-repeat;
 }
 #nav {
@@ -59,12 +59,29 @@ transition: transform 0.3s;
   border: 3px solid rgb(209, 48, 48);
   margin-top: 1rem;
 }
+
+
 #login:hover{
   transform: scale(1.1);
 }
-#login a:hover{
-  transform: scale(1.1);
+#login {
+  animation-duration: 1s;
+  animation-name: slidein;
 }
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+
+
 .pic:hover{
 box-shadow: 3px 3px 15px rgb(100, 172, 33);
 transform: scale(0.9);
@@ -175,9 +192,11 @@ justify-content: center;
 align-items: center;
 padding: 1rem;
 border: 1px solid black;
+transition: transform 0.5s;
 }
 .card:hover{
   box-shadow: 1px 1px 7px black;
+  transform: scale(1.1);
 }
 .card-img-top{
   height: 12rem; 
